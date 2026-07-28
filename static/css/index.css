@@ -675,13 +675,13 @@ code {
   }
   
   .publication-title {
-    font-size: 2rem !important;
+    font-size: clamp(0.8rem, 4.2vw, 1.9rem) !important;
     line-height: 1.2 !important;
     margin-bottom: 1.5rem !important;
   }
 
   .publication-title-line {
-    white-space: normal;
+    white-space: nowrap;
   }
   
   .publication-authors {
@@ -732,10 +732,6 @@ code {
 }
 
 @media screen and (max-width: 480px) {
-  .publication-title {
-    font-size: 1.7rem !important;
-  }
-  
   .hero-body {
     padding: 1.5rem 0.75rem;
   }
