@@ -164,11 +164,16 @@ body {
 /* Publication Content Styling */
 .publication-title {
     font-family: 'Inter', sans-serif !important;
-    font-size: 2.65rem !important;
+    font-size: 2.3rem !important;
     font-weight: 800 !important;
     color: var(--text-primary) !important;
     margin-bottom: 2rem !important;
     line-height: 1.15 !important;
+}
+
+.publication-title-line {
+  display: block;
+  white-space: nowrap;
 }
 
 .publication-banner {
@@ -254,9 +259,16 @@ body {
   margin-right: 0.5rem;
 }
 
-.affiliation-line {
-  display: block;
-  margin-bottom: 0.2rem;
+.publication-affiliations {
+  font-size: 0.92rem !important;
+}
+
+.affiliation-row {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
 }
 
 .publication-banner img {
@@ -663,13 +675,22 @@ code {
   }
   
   .publication-title {
-    font-size: 2.5rem !important;
+    font-size: 2rem !important;
     line-height: 1.2 !important;
     margin-bottom: 1.5rem !important;
+  }
+
+  .publication-title-line {
+    white-space: normal;
   }
   
   .publication-authors {
     font-size: 1rem !important;
+  }
+
+  .affiliation-row {
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
   }
   
   .button {
@@ -712,7 +733,7 @@ code {
 
 @media screen and (max-width: 480px) {
   .publication-title {
-    font-size: 2rem !important;
+    font-size: 1.7rem !important;
   }
   
   .hero-body {
@@ -757,6 +778,10 @@ code {
 
 /* Tablet Responsive */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+  .publication-title {
+    font-size: 1.9rem !important;
+  }
+
   .hero-body {
     padding: 3rem 2rem;
   }
