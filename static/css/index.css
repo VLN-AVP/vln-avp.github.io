@@ -148,7 +148,7 @@ body {
   box-shadow: var(--shadow-lg);
 }
 
-.publication-video {
+.paper-video {
   display: block;
   width: 100%;
   height: auto;
