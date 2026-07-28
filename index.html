@@ -83,7 +83,7 @@
 
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/index.css?v=20260728-3">
+  <link rel="stylesheet" href="static/css/index.css?v=20260728-4">
 
   <!-- Non-critical CSS - Load asynchronously -->
   <link rel="preload" href="static/css/bulma-carousel.min.css" as="style"
@@ -213,6 +213,15 @@
                       <span>Code</span>
                     </span>
                   </span>
+
+                  <span class="link-block">
+                    <a href="#video" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-play"></i>
+                      </span>
+                      <span>Video</span>
+                    </a>
+                  </span>
                 </div>
               </div>
             </div>
@@ -236,6 +245,25 @@
       </div>
     </section>
     <!-- End teaser figure -->
+
+    <!-- Video -->
+    <section class="section publication-video-section" id="video">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Video</h2>
+            <div class="publication-video-frame">
+              <video class="publication-video" controls playsinline preload="metadata"
+                poster="static/images/teaser.jpg">
+                <source src="static/videos/iros2026_0308_compressed.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End video -->
 
     <!-- Paper abstract -->
     <section class="section hero is-light">
