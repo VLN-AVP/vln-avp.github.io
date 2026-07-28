@@ -78,7 +78,7 @@ body {
     transform: translateY(-2px);
 }
 
-.link-block a {
+.link-block > .button {
     margin: 8px 4px;
 }
 
@@ -121,9 +121,21 @@ body {
 }
 
 .button.is-disabled {
-  opacity: 0.58;
+  opacity: 1;
   cursor: not-allowed;
   pointer-events: none;
+}
+
+.conference-logo-wrap {
+  margin: 1.25rem auto 0.25rem;
+  text-align: center;
+}
+
+.conference-logo {
+  display: inline-block;
+  width: 180px;
+  max-width: 45vw;
+  height: auto;
 }
 
 
