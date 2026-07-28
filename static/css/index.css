@@ -164,10 +164,11 @@ body {
 /* Publication Content Styling */
 .publication-title {
     font-family: 'Inter', sans-serif !important;
+    font-size: 2.65rem !important;
     font-weight: 800 !important;
     color: var(--text-primary) !important;
     margin-bottom: 2rem !important;
-    line-height: 1.1 !important;
+    line-height: 1.15 !important;
 }
 
 .publication-banner {
@@ -251,6 +252,11 @@ body {
 .author-block {
   display: inline-block;
   margin-right: 0.5rem;
+}
+
+.affiliation-line {
+  display: block;
+  margin-bottom: 0.2rem;
 }
 
 .publication-banner img {
