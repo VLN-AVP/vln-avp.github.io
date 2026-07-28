@@ -1,37 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>VLN-AVP | Zero-Shot Vision-Language Navigation for Autonomous Valet Parking</title>
-  <meta name="title" content="VLN-AVP: Zero-Shot Vision-Language Navigation with Hybrid Long-Short-Term Memory for Autonomous Valet Parking">
-  <meta name="description" content="VLN-AVP enables map-free autonomous valet parking from natural-language instructions using BEV perception, vision-language models, and hybrid memory.">
-  <meta name="keywords" content="autonomous valet parking, vision-language navigation, vision-language model, zero-shot navigation, hybrid memory, BEV perception, underground parking, 3D Gaussian Splatting">
-  <meta name="author" content="Yijian Li, Xiangru Mu, Changze Li, Hantian Shi, Jiyuan Cai, Jia Cai, Xiaoxue Liu, Yajing Sun, Ming Yang, Tong Qin">
+  <!-- Primary Meta Tags -->
+  <meta name="title"
+    content="VLN-AVP: Zero-Shot Vision-Language Navigation with Hybrid Long-Short-Term Memory for Autonomous Valet Parking">
+  <meta name="description"
+    content="VLN-AVP enables map-free autonomous valet parking from natural-language instructions using BEV perception, vision-language models, and hybrid memory.">
+  <meta name="keywords"
+    content="autonomous valet parking, vision-language navigation, vision-language model, zero-shot navigation, hybrid memory, BEV perception, underground parking">
+  <meta name="author"
+    content="Yijian Li, Xiangru Mu, Changze Li, Hantian Shi, Jiyuan Cai, Jia Cai, Xiaoxue Liu, Yajing Sun, Ming Yang, Tong Qin">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#071622">
-  <link rel="canonical" href="https://vln-avp.github.io/">
+  <meta name="language" content="English">
 
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="VLN-AVP">
-  <meta property="og:title" content="VLN-AVP: Map-Free Autonomous Valet Parking with Vision and Language">
-  <meta property="og:description" content="Zero-shot vision-language navigation for autonomous valet parking, powered by BEV perception and hybrid long-short-term memory.">
+  <meta property="og:title"
+    content="VLN-AVP: Zero-Shot Vision-Language Navigation with Hybrid Long-Short-Term Memory for Autonomous Valet Parking">
+  <meta property="og:description"
+    content="Zero-shot vision-language navigation for map-free autonomous valet parking with hybrid long-short-term memory.">
   <meta property="og:url" content="https://vln-avp.github.io/">
-  <meta property="og:image" content="https://vln-avp.github.io/static/images/social-preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="VLN-AVP research preview">
+  <meta property="og:image" content="https://vln-avp.github.io/static/images/teaser.jpg">
+  <meta property="og:image:alt" content="Traditional AVP compared with the VLN-AVP framework">
   <meta property="article:published_time" content="2026-07-20T10:01:20Z">
+  <meta property="article:author" content="Yijian Li">
   <meta property="article:section" content="Robotics">
+  <meta property="article:tag" content="Autonomous Valet Parking">
+  <meta property="article:tag" content="Vision-Language Navigation">
 
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="VLN-AVP: Map-Free Autonomous Valet Parking with Vision and Language">
-  <meta name="twitter:description" content="Zero-shot vision-language navigation for autonomous valet parking with hybrid long-short-term memory.">
-  <meta name="twitter:image" content="https://vln-avp.github.io/static/images/social-preview.png">
-  <meta name="twitter:image:alt" content="VLN-AVP research preview">
+  <meta name="twitter:title"
+    content="VLN-AVP: Zero-Shot Vision-Language Navigation for Autonomous Valet Parking">
+  <meta name="twitter:description"
+    content="Map-free autonomous valet parking from natural-language instructions using BEV perception and hybrid memory.">
+  <meta name="twitter:image" content="https://vln-avp.github.io/static/images/teaser.jpg">
+  <meta name="twitter:image:alt" content="Traditional AVP compared with the VLN-AVP framework">
 
-  <meta name="citation_title" content="VLN-AVP: Zero-Shot Vision-Language Navigation with Hybrid Long-Short-Term Memory for Autonomous Valet Parking">
+  <!-- Academic/Research Specific -->
+  <meta name="citation_title"
+    content="VLN-AVP: Zero-Shot Vision-Language Navigation with Hybrid Long-Short-Term Memory for Autonomous Valet Parking">
   <meta name="citation_author" content="Li, Yijian">
   <meta name="citation_author" content="Mu, Xiangru">
   <meta name="citation_author" content="Li, Changze">
@@ -46,376 +59,297 @@
   <meta name="citation_arxiv_id" content="2607.17767">
   <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2607.17767">
 
-  <link rel="icon" type="image/png" href="static/images/favicon.png">
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://documentcloud.adobe.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+
+  <title>VLN-AVP | Zero-Shot Vision-Language Navigation for Autonomous Valet Parking</title>
+
+  <!-- Favicon and App Icons -->
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+
+  <!-- Critical CSS - Load synchronously -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
+
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+
+  <!-- Fonts - Optimized loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
 
+  <!-- Structured Data for Academic Papers -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
     "headline": "VLN-AVP: Zero-Shot Vision-Language Navigation with Hybrid Long-Short-Term Memory for Autonomous Valet Parking",
     "description": "A zero-shot vision-language navigation framework for map-free autonomous valet parking using BEV perception and hybrid long-short-term memory.",
+    "author": [
+      {"@type": "Person", "name": "Yijian Li"},
+      {"@type": "Person", "name": "Xiangru Mu"},
+      {"@type": "Person", "name": "Changze Li"},
+      {"@type": "Person", "name": "Hantian Shi"},
+      {"@type": "Person", "name": "Jiyuan Cai"},
+      {"@type": "Person", "name": "Jia Cai"},
+      {"@type": "Person", "name": "Xiaoxue Liu"},
+      {"@type": "Person", "name": "Yajing Sun"},
+      {"@type": "Person", "name": "Ming Yang"},
+      {"@type": "Person", "name": "Tong Qin"}
+    ],
     "datePublished": "2026-07-20",
     "url": "https://arxiv.org/abs/2607.17767",
     "sameAs": "https://doi.org/10.48550/arXiv.2607.17767",
-    "image": "https://vln-avp.github.io/static/images/social-preview.png",
+    "image": "https://vln-avp.github.io/static/images/teaser.jpg",
+    "keywords": ["Autonomous Valet Parking", "Vision-Language Navigation", "Vision-Language Models", "Zero-Shot Navigation", "Hybrid Memory", "BEV Perception"],
     "isAccessibleForFree": true,
-    "keywords": [
-      "Autonomous Valet Parking",
-      "Vision-Language Navigation",
-      "Vision-Language Models",
-      "Zero-Shot Navigation",
-      "Hybrid Memory",
-      "BEV Perception"
-    ],
-    "author": [
-      {"@type": "Person", "name": "Yijian Li", "affiliation": {"@type": "Organization", "name": "Shanghai Jiao Tong University"}},
-      {"@type": "Person", "name": "Xiangru Mu", "affiliation": {"@type": "Organization", "name": "Shanghai Jiao Tong University"}},
-      {"@type": "Person", "name": "Changze Li", "affiliation": {"@type": "Organization", "name": "Shanghai Jiao Tong University"}},
-      {"@type": "Person", "name": "Hantian Shi", "affiliation": {"@type": "Organization", "name": "Shanghai Jiao Tong University"}},
-      {"@type": "Person", "name": "Jiyuan Cai", "affiliation": {"@type": "Organization", "name": "Yinwang Intelligent Technology Co., Ltd."}},
-      {"@type": "Person", "name": "Jia Cai", "affiliation": {"@type": "Organization", "name": "Yinwang Intelligent Technology Co., Ltd."}},
-      {"@type": "Person", "name": "Xiaoxue Liu", "affiliation": {"@type": "Organization", "name": "Yinwang Intelligent Technology Co., Ltd."}},
-      {"@type": "Person", "name": "Yajing Sun", "affiliation": {"@type": "Organization", "name": "Yinwang Intelligent Technology Co., Ltd."}},
-      {"@type": "Person", "name": "Ming Yang", "affiliation": {"@type": "Organization", "name": "Shanghai Jiao Tong University"}},
-      {"@type": "Person", "name": "Tong Qin", "email": "qintong@sjtu.edu.cn", "affiliation": {"@type": "Organization", "name": "Shanghai Jiao Tong University"}}
-    ]
+    "mainEntity": {
+      "@type": "WebPage",
+      "@id": "https://vln-avp.github.io/"
+    }
   }
   </script>
 </head>
 
 <body>
-  <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="VLN-AVP home">
-      <span class="brand-mark" aria-hidden="true"><span>V</span><span>M</span></span>
-      <span class="brand-name">VLN-AVP</span>
-    </a>
-    <nav class="site-nav" aria-label="Primary navigation">
-      <a href="#method">Method</a>
-      <a href="#dataset">Dataset</a>
-      <a href="#results">Results</a>
-      <a href="#citation">Citation</a>
-    </nav>
-    <a class="header-paper" href="https://arxiv.org/abs/2607.17767" target="_blank" rel="noopener noreferrer">
-      arXiv <span aria-hidden="true">&#8599;</span>
-    </a>
-  </header>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
 
   <main id="main-content">
-    <section class="hero" id="top">
-      <div class="hero-grid" aria-hidden="true"></div>
-      <div class="hero-content">
-        <p class="eyebrow">arXiv:2607.17767 <span></span> Robotics <span></span> 2026</p>
-        <h1><span>VLN-AVP:</span> Zero-Shot Vision-Language Navigation with Hybrid Long-Short-Term Memory for Autonomous Valet Parking</h1>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">VLN-AVP: Zero-Shot Vision-Language Navigation with Hybrid
+                Long-Short-Term Memory for Autonomous Valet Parking</h1>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">Yijian Li<sup>1</sup>,</span>
+                <span class="author-block">Xiangru Mu<sup>1</sup>,</span>
+                <span class="author-block">Changze Li<sup>1</sup>,</span>
+                <span class="author-block">Hantian Shi<sup>1</sup>,</span>
+                <span class="author-block">Jiyuan Cai<sup>2</sup>,</span>
+                <span class="author-block">Jia Cai<sup>2</sup>,</span>
+                <span class="author-block">Xiaoxue Liu<sup>2</sup>,</span>
+                <span class="author-block">Yajing Sun<sup>2</sup>,</span>
+                <span class="author-block">Ming Yang<sup>1</sup>,</span>
+                <span class="author-block">Tong Qin<sup>1,&#9993;</sup></span>
+              </div>
 
-        <div class="authors" aria-label="Paper authors">
-          <span>Yijian Li<sup>1</sup></span>
-          <span>Xiangru Mu<sup>1</sup></span>
-          <span>Changze Li<sup>1</sup></span>
-          <span>Hantian Shi<sup>1</sup></span>
-          <span>Jiyuan Cai<sup>2</sup></span>
-          <span>Jia Cai<sup>2</sup></span>
-          <span>Xiaoxue Liu<sup>2</sup></span>
-          <span>Yajing Sun<sup>2</sup></span>
-          <span>Ming Yang<sup>1</sup></span>
-          <span>Tong Qin<sup>1,&#9993;</sup></span>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"><sup>1</sup>Shanghai Jiao Tong University</span>
+                <span class="author-block"><sup>2</sup>Yinwang Intelligent Technology Co., Ltd.</span>
+                <span class="author-block"><br>arXiv preprint, 2026</span>
+                <span class="eql-cntrb"><small><br><sup>&#9993;</sup>Corresponding author:
+                    <a href="mailto:qintong@sjtu.edu.cn">qintong@sjtu.edu.cn</a></small></span>
+              </div>
+
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <span class="link-block">
+                    <a href="https://arxiv.org/abs/2607.17767" target="_blank" rel="noopener noreferrer"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Paper</span>
+                    </a>
+                  </span>
+
+                  <span class="link-block">
+                    <span class="external-link button is-normal is-rounded is-dark is-disabled"
+                      role="button" aria-disabled="true" title="Code coming soon">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="affiliations">
-          <p><sup>1</sup> Shanghai Jiao Tong University</p>
-          <p><sup>2</sup> Yinwang Intelligent Technology Co., Ltd.</p>
-          <p><sup>&#9993;</sup> Corresponding author: <a href="mailto:qintong@sjtu.edu.cn">qintong@sjtu.edu.cn</a></p>
+
+    <!-- Teaser figure -->
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <img class="teaser-image" src="static/images/teaser.jpg"
+            alt="Traditional autonomous valet parking compared with the VLN-AVP framework">
+          <h2 class="subtitle has-text-centered">
+            VLN-AVP understands semantic cues and follows natural-language instructions without relying on a pre-built
+            HD map.
+          </h2>
         </div>
+      </div>
+    </section>
+    <!-- End teaser figure -->
 
-        <div class="hero-actions">
-          <a class="button button-primary" href="https://arxiv.org/abs/2607.17767" target="_blank" rel="noopener noreferrer">
-            Read on arXiv <span aria-hidden="true">&#8599;</span>
-          </a>
-          <button class="button button-disabled" type="button" disabled aria-label="Code is coming soon">
-            Code <span>Coming soon</span>
+    <!-- Paper abstract -->
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Existing methods in Autonomous Valet Parking (AVP) typically rely on pre-built maps, which severely
+                restricts their scalability to unseen environments and open-vocabulary targets. Inspired by the
+                application of Vision-Language Models (VLMs) in Vision-Language Navigation (VLN) tasks, we propose
+                VLN-AVP, a zero-shot navigation framework for AVP tasks. By combining the precise spatial perception of
+                a Bird's-Eye-View (BEV) model with the general intelligence of VLMs, our framework 1) eliminates the
+                dependency on pre-built maps, 2) interprets semantic environmental contexts in parking scenarios, and
+                3) enables intuitive navigation following natural language instructions. Specifically, we introduce a
+                hybrid memory system: a short-term perception memory tracks semantic visual cues to address the
+                limitations of VLM's single-frame reasoning in existing methods, while a long-term topological memory
+                facilitates stable policy learning from past experiences. To bridge the gap in existing benchmarks, we
+                also present the VLN-AVP dataset and benchmark. Featuring 10 high-fidelity parking scenes and over 1,000
+                navigation episodes, it has the largest number of garage scenes to date and is the first VLN benchmark
+                for underground parking. Extensive experiments demonstrate that in simulation, our method achieves an
+                over 25% improvement in success rate compared to VLN methods and an over 15% improvement compared to
+                other autonomous driving methods. Furthermore, it attains a leading success rate in real-world vehicle
+                experiments, proving its practical feasibility.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End paper abstract -->
+
+
+    <!-- Image carousel -->
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container">
+          <div id="results-carousel" class="carousel results-carousel">
+            <div class="item">
+              <img src="static/images/carousel1.jpg" alt="VLN-AVP system architecture" loading="lazy" />
+              <h2 class="subtitle has-text-centered">
+                VLN-AVP combines BEV perception, VLM reasoning, short-term perception memory, and long-term topological
+                memory in a hierarchical decision-making framework.
+              </h2>
+            </div>
+            <div class="item">
+              <img src="static/images/carousel2.jpg" alt="Ten scenes in the VLN-AVP dataset" loading="lazy" />
+              <h2 class="subtitle has-text-centered">
+                The VLN-AVP dataset contains 10 high-fidelity underground garage scenes reconstructed with 3D Gaussian
+                Splatting.
+              </h2>
+            </div>
+            <div class="item">
+              <img src="static/images/carousel3.jpg" alt="VLN-AVP simulation case study" loading="lazy" />
+              <h2 class="subtitle has-text-centered">
+                A simulation case study shows the system following a complex, multi-stage parking instruction.
+              </h2>
+            </div>
+            <div class="item">
+              <img src="static/images/carousel4.jpg" alt="VLN-AVP real-world vehicle experiment" loading="lazy" />
+              <h2 class="subtitle has-text-centered">
+                In a real-world test, the vehicle uses short-term memory and user feedback to reach the intended
+                elevator hall.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End image carousel -->
+
+
+
+
+    <!--BibTex citation -->
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <div class="bibtex-header">
+          <h2 class="title">BibTeX</h2>
+          <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+            <i class="fas fa-copy"></i>
+            <span class="copy-text">Copy</span>
           </button>
         </div>
-
-        <div class="capability-strip" aria-label="Core capabilities">
-          <div>
-            <span class="capability-code">01</span>
-            <strong>Map-free</strong>
-            <small>No pre-built HD map</small>
-          </div>
-          <div>
-            <span class="capability-code">02</span>
-            <strong>Zero-shot</strong>
-            <small>Natural-language targets</small>
-          </div>
-          <div>
-            <span class="capability-code">03</span>
-            <strong>Memory-aware</strong>
-            <small>Short-term + long-term</small>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="teaser section-shell" aria-labelledby="teaser-title">
-      <div class="section-tag" id="teaser-title">From fixed slots to semantic destinations</div>
-      <figure class="paper-figure hero-figure">
-        <img src="static/images/paper/introduction.webp" alt="Comparison of traditional autonomous valet parking, which relies on a pre-built HD map and fixed slot target, with VLN-AVP, which follows a natural-language instruction using visual-language reasoning and hybrid memory.">
-        <figcaption>
-          VLN-AVP interprets semantic cues in the environment and follows natural-language instructions without a pre-built map.
-        </figcaption>
-      </figure>
-    </section>
-
-    <section class="abstract section-shell" id="abstract">
-      <div class="section-heading">
-        <p class="section-index">Overview</p>
-        <h2>Parking by meaning,<br>not by map coordinates.</h2>
-      </div>
-      <div class="abstract-copy">
-        <p class="lead">Existing Autonomous Valet Parking systems are difficult to scale to unseen environments and open-vocabulary targets because they typically rely on pre-built maps.</p>
-        <p>VLN-AVP combines the precise spatial perception of a Bird's-Eye-View model with the general intelligence of Vision-Language Models. A short-term perception memory retains semantic visual cues that may disappear between VLM queries, while a long-term topological memory learns stable navigation policies from past experience.</p>
-        <p>The framework removes the dependency on pre-built maps, interprets semantic environmental context in parking scenarios, and enables intuitive navigation from natural-language instructions. Experiments in simulation and on a real vehicle demonstrate substantial gains over VLN and autonomous-driving baselines.</p>
-      </div>
-      <aside class="abstract-facts" aria-label="Dataset facts">
-        <div><strong>10</strong><span>high-fidelity garage scenes</span></div>
-        <div><strong>1,000+</strong><span>navigation episodes</span></div>
-        <div><strong>First</strong><span>underground parking VLN benchmark</span></div>
-      </aside>
-    </section>
-
-    <section class="method section-shell" id="method">
-      <div class="section-heading compact">
-        <p class="section-index">System</p>
-        <h2>A two-speed navigation stack.</h2>
-        <p>Fast spatial perception keeps the vehicle drivable. Slower VLM reasoning supplies semantic direction. Hybrid memory connects what the vehicle sees now with what it has learned before.</p>
-      </div>
-
-      <figure class="paper-figure method-figure">
-        <img src="static/images/paper/method.webp" alt="VLN-AVP system architecture showing multiview images, BEV perception, candidate trajectories, Gemini vision-language reasoning, short-term object memory, long-term topological memory, hierarchical decision-making, and vehicle control.">
-        <figcaption>System architecture. Orange modules run at high frequency, the blue VLM core performs high-level reasoning, and green modules maintain short- and long-term memory.</figcaption>
-      </figure>
-
-      <div class="method-cards">
-        <article>
-          <span class="card-kicker">Perceive</span>
-          <h3>BEV trajectory proposals</h3>
-          <p>Four surround-view cameras feed MapTR, producing vectorized lane centerlines and kinematically feasible candidate trajectories.</p>
-        </article>
-        <article>
-          <span class="card-kicker">Remember now</span>
-          <h3>Short-term visual cues</h3>
-          <p>Grounding DINO detects signs at high frequency. A filtered image queue preserves critical cues across low-frequency VLM decisions.</p>
-        </article>
-        <article>
-          <span class="card-kicker">Learn over time</span>
-          <h3>Long-term topology</h3>
-          <p>A sparse graph stores junctions, landmarks, and successful routes, allowing repeat tasks to reuse reliable past experience.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="memory-band">
-      <div class="section-shell memory-grid">
-        <div class="memory-copy">
-          <p class="section-index">Hybrid memory</p>
-          <h2>Reason when needed.<br>Recall when possible.</h2>
-          <p>The hierarchical decision module first queries long-term memory for a matching route. When no valid experience exists, it falls back to the latest VLM decision and maps that decision to a feasible trajectory.</p>
-          <div class="memory-metrics">
-            <div><strong>77.4%</strong><span>fewer VLM calls with LTM</span></div>
-            <div><strong>77.4%</strong><span>lower API cost over 10 episodes</span></div>
-          </div>
-        </div>
-        <figure class="paper-figure dark-figure">
-          <img src="static/images/paper/query_module.webp" alt="Hierarchical decision-making module querying long-term topological memory before using cached VLM decisions to select a candidate trajectory.">
-          <figcaption>Hierarchical decision-making balances retrieved experience with zero-shot VLM guidance.</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="dataset section-shell" id="dataset">
-      <div class="section-heading dataset-heading">
-        <div>
-          <p class="section-index">Dataset & benchmark</p>
-          <h2>Ten garages.<br>One continuous testbed.</h2>
-        </div>
-        <div>
-          <p>Real underground garages are reconstructed as photorealistic, large-scale 3D environments using 3D Gaussian Splatting. Every episode includes a natural-language instruction, start, target, and ground-truth trajectory.</p>
-          <span class="status-pill">Dataset release planned</span>
-        </div>
-      </div>
-
-      <figure class="paper-figure panorama">
-        <img src="static/images/paper/dataset_all.webp" alt="Ten scenes in the VLN-AVP dataset, with five photorealistic 3D Gaussian Splatting garage views and five top-down reconstructed garage maps.">
-        <figcaption>VLN-AVP contains ten high-fidelity underground parking scenes reconstructed from real-world scans.</figcaption>
-      </figure>
-
-      <div class="dataset-splits">
-        <article>
-          <span>Regular</span>
-          <h3>Single semantic target</h3>
-          <p>“Go to the exit.”<br>“Go to the elevator entrance.”</p>
-        </article>
-        <article>
-          <span>Challenging</span>
-          <h3>Composed demands</h3>
-          <p>“Find a parking space with an electric vehicle charging port.”</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="results section-shell" id="results">
-      <div class="section-heading result-heading">
-        <div>
-          <p class="section-index">Results</p>
-          <h2>Stronger in simulation.<br>Feasible on the vehicle.</h2>
-        </div>
-        <p>VLN-AVP leads both navigation task splits and transfers to continuous, real-time experiments on a real vehicle.</p>
-      </div>
-
-      <div class="result-scoreboard">
-        <article class="score-card featured">
-          <span>Regular tasks</span>
-          <strong>65.2<small>% SR</small></strong>
-          <p>+15.5 points over the strongest autonomous-driving baseline.</p>
-        </article>
-        <article class="score-card">
-          <span>Challenging tasks</span>
-          <strong>45.4<small>% SR</small></strong>
-          <p>Multi-stage, open-vocabulary demands in unseen garages.</p>
-        </article>
-        <article class="score-card">
-          <span>Real-world trials</span>
-          <strong>63.3<small>% SR</small></strong>
-          <p>30 trials across two underground parking garages.</p>
-        </article>
-      </div>
-
-      <div class="table-grid">
-        <div class="result-table-wrap">
-          <h3>Simulation benchmark</h3>
-          <table>
-            <thead>
-              <tr><th>Task</th><th>SR</th><th>OSR</th><th>SPL</th><th>NE</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Regular</td><td><strong>65.2</strong></td><td>74.6</td><td>43.1</td><td>13.2 m</td></tr>
-              <tr><td>Challenging</td><td><strong>45.4</strong></td><td>59.7</td><td>33.2</td><td>18.4 m</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="result-table-wrap">
-          <h3>Memory ablation · Regular</h3>
-          <table>
-            <thead>
-              <tr><th>Method</th><th>SR</th><th>OSR</th><th>SPL</th><th>NE</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Full VLN-AVP</td><td><strong>65.2</strong></td><td>74.6</td><td>43.1</td><td>13.2 m</td></tr>
-              <tr><td>w/o LTM</td><td>56.8</td><td>70.4</td><td>36.5</td><td>15.6 m</td></tr>
-              <tr><td>w/o LTM & STM</td><td>42.2</td><td>49.3</td><td>30.9</td><td>23.2 m</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <section class="cases">
-      <div class="section-shell">
-        <div class="section-heading compact">
-          <p class="section-index">Qualitative studies</p>
-          <h2>See the decision trail.</h2>
-          <p>Each case exposes the visual evidence, language reasoning, and selected action instead of presenting navigation as a black box.</p>
-        </div>
-
-        <article class="case-study">
-          <div class="case-label">
-            <span>Simulation</span>
-            <h3>Composing location, exit, and free-space constraints</h3>
-            <p>The agent follows a multi-stage instruction to find an empty parking place near the exit of Section B with no cars on either side.</p>
-          </div>
-          <figure class="paper-figure">
-            <img src="static/images/paper/sim_demo.webp" alt="Simulated VLN-AVP case study with a global route and four camera frames showing the VLM reasoning from Section A to a free parking space near the exit in Section B.">
-          </figure>
-        </article>
-
-        <article class="case-study">
-          <div class="case-label">
-            <span>Real vehicle</span>
-            <h3>Correcting the destination through user feedback</h3>
-            <p>After stopping at the wrong elevator hall, the vehicle continues on request. Short-term memory preserves a sign that is no longer visible in the current frame.</p>
-          </div>
-          <figure class="paper-figure">
-            <img src="static/images/paper/real_demo.webp" alt="Real-world VLN-AVP case study in which the system remembers an elevator sign, receives user feedback, and continues to the intended elevator hall.">
-          </figure>
-        </article>
-      </div>
-    </section>
-
-    <section class="learning section-shell">
-      <div class="learning-grid">
-        <div class="learning-copy">
-          <p class="section-index">Learning over episodes</p>
-          <h2>The map grows from experience, not surveying.</h2>
-          <p>Across repeated attempts, landmark and route memories become more reliable. The full system improves both success rate and precise stopping, while the variant without long-term memory shows no clear learning trend.</p>
-          <dl>
-            <div><dt>VLM calls</dt><dd>1,403 <span>&rarr;</span> 317</dd></div>
-            <div><dt>Average time</dt><dd>262.7 s <span>&rarr;</span> 161.7 s</dd></div>
-            <div><dt>API cost</dt><dd>$1.06 <span>&rarr;</span> $0.24</dd></div>
-          </dl>
-        </div>
-        <div class="learning-visuals">
-          <figure class="paper-figure">
-            <img src="static/images/paper/ltm_show.webp" alt="A visualized long-term topological memory after ten navigation episodes, with junction and landmark nodes connected through the parking garage.">
-            <figcaption>Long-term topological memory after ten navigation episodes.</figcaption>
-          </figure>
-          <figure class="paper-figure chart-figure">
-            <img src="static/images/paper/ltm_grow.webp" alt="Charts showing success rate and success-rate to oracle-success-rate ratio increasing over fifty navigation attempts with long-term memory.">
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="citation" id="citation">
-      <div class="section-shell citation-grid">
-        <div>
-          <p class="section-index">Citation</p>
-          <h2>Build on VLN-AVP.</h2>
-          <p>The paper is available on arXiv. Code and the dataset will be released later.</p>
-          <a href="https://arxiv.org/abs/2607.17767" target="_blank" rel="noopener noreferrer">arXiv:2607.17767 <span aria-hidden="true">&#8599;</span></a>
-        </div>
-        <div class="bibtex-block">
-          <button class="copy-button" type="button" data-copy-target="bibtex-code">Copy BibTeX</button>
-          <pre id="bibtex-code"><code>@article{li2026vlnavp,
-  title   = {VLN-AVP: Zero-Shot Vision-Language Navigation
-             with Hybrid Long-Short-Term Memory for
-             Autonomous Valet Parking},
-  author  = {Li, Yijian and Mu, Xiangru and Li, Changze and
-             Shi, Hantian and Cai, Jiyuan and Cai, Jia and
-             Liu, Xiaoxue and Sun, Yajing and Yang, Ming and
-             Qin, Tong},
-  journal = {arXiv preprint arXiv:2607.17767},
-  year    = {2026}
+        <pre id="bibtex-code"><code>@article{li2026vlnavp,
+  title={VLN-AVP: Zero-Shot Vision-Language Navigation with Hybrid Long-Short-Term Memory for Autonomous Valet Parking},
+  author={Li, Yijian and Mu, Xiangru and Li, Changze and Shi, Hantian and Cai, Jiyuan and Cai, Jia and Liu, Xiaoxue and Sun, Yajing and Yang, Ming and Qin, Tong},
+  journal={arXiv preprint arXiv:2607.17767},
+  year={2026},
+  url={https://arxiv.org/abs/2607.17767}
 }</code></pre>
-        </div>
       </div>
     </section>
-  </main>
+    <!--End BibTex citation -->
 
-  <footer>
-    <div class="footer-inner">
-      <div class="brand footer-brand">
-        <span class="brand-mark" aria-hidden="true"><span>V</span><span>M</span></span>
-        <span class="brand-name">VLN-AVP</span>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+
+              <p>
+                This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                  target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                  href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+                You are free to borrow the source code of this website, we just ask that you link back to this page in
+                the footer. <br> This website is licensed under a <a rel="license"
+                  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                  Commons Attribution-ShareAlike 4.0 International License</a>.
+              </p>
+
+            </div>
+          </div>
+        </div>
       </div>
-      <p>Zero-shot vision-language navigation for autonomous valet parking.</p>
-      <p class="footer-credit">Built from the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noopener noreferrer">Academic Project Page Template</a>.</p>
-    </div>
-  </footer>
+    </footer>
+
+    <!-- Statcounter tracking code -->
+
+    <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
 </body>
+
 </html>
